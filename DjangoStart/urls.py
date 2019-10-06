@@ -21,5 +21,4 @@ from rest_api import views
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('employees/', views.employeeList.as_view()),
-    #path('api/rest_api/', include('rest_api.api.urls', namespace='api-rest_api')),
 ]
