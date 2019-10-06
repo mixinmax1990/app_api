@@ -23,7 +23,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = '!yrbbq+x4$a_ag$f#b8e$_e8+jr!-dxw+c$1%i*98=6aft2ho-'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = ['*']
 
@@ -77,7 +77,7 @@ WSGI_APPLICATION = 'DjangoStart.wsgi.application'
 
 DATABASES = {
     "default": {
-        "ENGINE": "django.db.backends.postgresql _psycopg2",
+        "ENGINE": "django.db.backends.postgresql_psycopg2",
         "NAME": "app_api",
         "USER": "mixinmax",
         "PASSWORD": "seether1990",
@@ -124,4 +124,3 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/2.2/howto/static-files/
 
 STATIC_URL = '/static/'
-
